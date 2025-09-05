@@ -54,3 +54,27 @@ CREATE DATABASE cloud_vendor;
 mvn spring-boot:run
 ```
 
+## 🧪 Testing with Postman
+
+### 1. Import the Postman collection located at
+```bash
+CloudVendor API Collection.postman_collection.json
+```
+
+### 2. The collection contains the following requests:
+
+Get Cloud Vendor by ID
+Get All Cloud Vendors
+Create New Cloud Vendor
+Update Cloud Vendor
+Delete Cloud Vendor
+
+### 📌 Future Enhancements
+
+Add JUnit + MockMvc tests
+
+Add pagination & filtering for vendor listing
+
+Add global exception handling with custom error responses
+
+Deploy to Docker and/or cloud platform
