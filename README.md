@@ -64,10 +64,15 @@ CloudVendor API Collection.postman_collection.json
 ### 2. The collection contains the following requests:
 
 Get Cloud Vendor by ID
+
 Get All Cloud Vendors
+
 Create New Cloud Vendor
+
 Update Cloud Vendor
+
 Delete Cloud Vendor
+
 
 ### 📌 Future Enhancements
 
