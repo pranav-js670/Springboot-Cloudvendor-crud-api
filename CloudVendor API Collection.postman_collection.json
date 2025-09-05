@@ -1,0 +1,111 @@
+{
+  "info": {
+    "_postman_id": "2d6d9a9b-43e2-4d20-a22f-aa758d921449",
+    "name": "CloudVendor API Collection",
+    "description": "This Postman collection contains test requests for the CloudVendor CRUD API built using Spring Boot and MySQL.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "37620725"
+  },
+  "item": [
+    {
+      "name": "Sanity Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}",
+          "host": ["{{baseURL}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create New Cloud Vendor",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"vendorId\": \"V001\",\r\n  \"vendorName\": \"Acme Cloud\",\r\n  \"vendorAddress\": \"123 Cloud St\",\r\n  \"vendorPhNo\": \"9999999999\"\r\n}\r\n\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}",
+          "host": ["{{baseURL}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Cloud Vendor by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/V001",
+          "host": ["{{baseURL}}"],
+          "path": ["V001"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Cloud Vendors",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}",
+          "host": ["{{baseURL}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Cloud Vendor",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"vendorId\": \"V001\",\r\n  \"vendorName\": \"Acme Cloud - Updated\",\r\n  \"vendorAddress\": \"123 Cloud St, Floor 2\",\r\n  \"vendorPhNo\": \"8888888888\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/V001",
+          "host": ["{{baseURL}}"],
+          "path": ["V001"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Cloud Vendor",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseURL}}/V001",
+          "host": ["{{baseURL}}"],
+          "path": ["V001"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseURL",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
