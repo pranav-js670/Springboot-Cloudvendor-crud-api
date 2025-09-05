@@ -1,4 +1,4 @@
-# 🌩️ CloudVendor CRUD API
+# CloudVendor CRUD API
 
 A **Spring Boot RESTful API** for managing Cloud Vendors with full CRUD operations.  
 This project uses **Spring Boot**, **Spring Data JPA**, and **MySQL** as the database.  
@@ -21,3 +21,36 @@ A **Postman collection** is included for testing all endpoints.
 - **Spring Data JPA**
 - **MySQL**
 - **Postman**
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/pranav-js670/Springboot-Cloudvendor-crud-api.git
+cd springboot-cloudvendor-crud-api
+```
+
+### 2. Configure the database
+Update application.yml (or application.properties) with your MySQL credentials:
+```bash
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud_vendor?useSSL=false
+    username: root
+    password: your_password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+```
+
+### 3. Create the database
+```bash
+CREATE DATABASE cloud_vendor;
+```
+
+### 4. Start the application
+```bash
+mvn spring-boot:run
+```
+
